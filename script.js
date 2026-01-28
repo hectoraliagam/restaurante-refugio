@@ -15,3 +15,18 @@ window.addEventListener("scroll", () => {
     header.style.boxShadow = "none";
   }
 });
+
+/* MOBILE MENU TOGGLE */
+menuToggle.addEventListener("click", () => {
+  menuOpen = !menuOpen;
+
+  navLinks.style.display = menuOpen ? "flex" : "none";
+  navLinks.style.position = "absolute";
+  navLinks.style.top = "72px";
+  navLinks.style.right = "0";
+  navLinks.style.width = "100%";
+  navLinks.style.flexDirection = "column";
+  navLinks.style.background = "#0b0b0b";
+  navLinks.style.padding = "1.5rem";
+  navLinks.style.gap = "1.2rem";
+});
