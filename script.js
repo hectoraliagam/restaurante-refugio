@@ -30,3 +30,13 @@ menuToggle.addEventListener("click", () => {
   navLinks.style.padding = "1.5rem";
   navLinks.style.gap = "1.2rem";
 });
+
+/* CLOSE MENU ON LINK CLICK */
+navAnchors.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      menuOpen = false;
+      navLinks.style.display = "none";
+    }
+  });
+});
